@@ -1,0 +1,21 @@
+<% include partials/header %>
+
+<form action="/articles/new" method="POST">
+  <h3>
+    <label for="article_title">Title</label>
+  </h3>
+  <p>
+    <input type="text" name="article[title]" id="article_title" autofocus>
+  </p>
+  <h3>
+    <label for="article_body">Write your article below</label>
+  </h3>
+  <p>
+    <textarea name="article[body]" id="article_body" class="bodyBox"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Submit Article">
+  </p>
+</form>
+
+<% include partials/footer %>
